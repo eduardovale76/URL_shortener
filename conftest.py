@@ -2,5 +2,5 @@ import pytest
 
 
 @pytest.fixture
-def inicial():
+def initial():
     assert 1 == 1
