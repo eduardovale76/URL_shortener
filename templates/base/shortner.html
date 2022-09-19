@@ -1,0 +1,32 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-header">
+    <h1>Your shortened URL</h1>
+    <hr>
+    <div><br>
+        <input type="text" value="{{original_url}}" id="result">
+        <button onclick="Hello()"class=" btn btn-primary">Copiar</button>
+    <script>
+        function Hello() {
+        var copyText = document.getElementById('result')
+        copyText.select();
+        document.execCommand('copy')
+        console.log('Copied Text')
+        }
+    </script>
+
+    </div>
+    
+  </div>
+  <div class="card-body">
+    <h7 class="card-title">Long URL:  {{original_url}}</h7>
+    <p class="card-text">Total of Clicks: ###</p>
+    
+  </div>
+</div>
+{% endblock content %}
+

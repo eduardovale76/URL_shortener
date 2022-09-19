@@ -4,15 +4,17 @@
 {% block content %}
 
 <div>
-<h1 class="search-title">Shortner</h1>
+<h1 class="shortner-title">Shortner</h1>
 </div>
 
-<div class="search-box">
-    
-    <input type="text" class="search-text" placeholder="Digite a URL..."><br>
-    <a class="search-btn"><br><br>
-        <button type="button" class="btn btn-primary">Encurtar</button>
-    </a>
+<div class="shortner-box">
+<form action="shortner/" method="post">
+    {%csrf_token%}
+
+    <input type="text" class="shortner-text" placeholder="Digite a URL..." name="urlorigin"><br>
+    <button type="submit"class="shortner-btn btn btn-primary" >Encurtar</button>
+</form>
+
 </div>
 {% endblock content %}
 

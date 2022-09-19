@@ -7,7 +7,7 @@ body{
 	);
 }
 
-.search-box {
+.shortner-box {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -21,21 +21,34 @@ body{
 	
 }
 
-.search-text {
+.shortner-text {
 	background: none;
 	border: 0;
 	outline: 0;
 	font-size: 16px;
 	padding: 0;
 }
-.search-btn  {
+.shortner-btn {
+	position: absolute;
+	top: 170%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.copy-btn  {
  	position: absolute;
- 	top: 120%;
+ 	top: 170%;
  	left: 50%;
  	transform: translate(-50%, -50%);
  }
 
- .search-title {
+ .card {
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ }
+
+ .shortner-title {
  	position: absolute;
  	top: 40%;
 	font-size: 50px;
