@@ -1,0 +1,20 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+<h1 class="shortner-title">Shortner</h1>
+</div>
+
+<div class="shortner-box">
+<form action="shortner/" method="post">
+    {%csrf_token%}
+
+    <input type="text" class="shortner-text" placeholder="Digite a URL..." name="urlorigin"><br>
+    <button type="submit"class="shortner-btn btn btn-primary" >Encurtar</button>
+</form>
+
+</div>
+{% endblock content %}
+
